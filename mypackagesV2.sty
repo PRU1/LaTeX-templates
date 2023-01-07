@@ -1,0 +1,47 @@
+\ProvidesPackage{mypackagesv2}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                              Packages                               %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Consider adding: bibtex
+\usepackage{graphicx} % Insert images
+\usepackage{amsmath} % Math styles
+\usepackage{amsfonts}
+\usepackage{multicol} % Multiple columns
+\usepackage{array} % More tabular options namely increase row width
+\usepackage[tmargin=1in,bmargin=1in,lmargin=1.25in,rmargin=1.25in]{geometry} % default word margins
+\usepackage{setspace} \doublespacing % not tested yet!
+\usepackage{fancyhdr} % For fancy headings
+\usepackage{fouriernc} % New Century Schoolbook
+\usepackage[version=4]{mhchem}
+\fontfamily{bk} % Set font
+\usepackage{tikz}
+\usepackage{xcolor}
+\usepackage{transparent}
+\definecolor{darkblue}{rgb}{0,0,0.5} 
+\usetikzlibrary{shapes.geometric, arrows}
+% \usepackage{sansmathfonts} % Font: Computer Modern Sans Serif
+% \usepackage[T1]{fontenc}
+% \renewcommand*\familydefault{\sfdefault} %% Only if the base font of the document is to be sans serif
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                                Misc                                 %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\everymath{\displaystyle} % Large math font
+% For circled enumerates
+\newcommand*\circled[1]{\tikz[baseline=(char.base)]{
+            \node[shape=circle,draw,inner sep=2pt] (char) {#1};}}
+% Page headings
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{RIGHT HEADER}
+\lhead{LEFT HEADER}
+\rfoot{\thepage}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                          Flowchart styling                          %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\tikzstyle{startstop} = [rectangle, rounded corners, minimum width=3cm, minimum height=1cm,text centered, draw=black, fill=red!30] % A rectangular stop 
+
+
+
+
+
+
